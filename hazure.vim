@@ -28,7 +28,7 @@ syn region  hazureNumber       start=/\s\d/ skip=/\d/    end=/\s/
 " Set hilighting
 hi def link hazureTodos        Todo
 hi def link hazureKeywords     Keyword
-hi def link hazureTypes        Types
+hi def link hazureTypes        Type
 hi def link hazureCommentLine  Comment
 hi def link hazureCommentBlock Comment
 hi def link hazureString       String
