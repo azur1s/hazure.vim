@@ -2,7 +2,7 @@
 " Language:  Hazure
 " Filenames: *.hz *.hazure
 
-if exists("b:current_syntax")
+if exists("b:current_syntax") && b:current_syntax == "hazure"
     finish
 endif
 
