@@ -14,7 +14,6 @@ syn keyword hazureTodos TODO XXX FIXME NOTE
 " Language keywords
 syn keyword hazureKeywords  let mut fun do end if then else case of return pub
 syn keyword hazureTypes     int string bool void vec_int vec_string vec_bool
-syn match   hazureIntrinsic "\k\@<!@\k\S*"
 
 " Comments
 syn region  hazureCommentLine  start="--" end="$"  contains=hazureTodos
