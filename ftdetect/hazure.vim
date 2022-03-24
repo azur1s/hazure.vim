@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.hazure set filetype=hazure
+autocmd BufNewFile,BufRead *.hz *.hazure set filetype=hazure
