@@ -26,6 +26,7 @@ syn region  hazureString       start=/\v"/  skip=/\v\\./ end=/\v"/
 " Set hilighting
 hi def link hazureTodos        Todo
 hi def link hazureKeywords     Keyword
+hi def link hazureIntrinsic    Keyword
 hi def link hazureTypes        Type
 hi def link hazureCommentLine  Comment
 hi def link hazureCommentBlock Comment
