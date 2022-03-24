@@ -12,8 +12,9 @@ set iskeyword=a-z,A-Z,_
 syn keyword hazureTodos TODO XXX FIXME NOTE
 
 " Language keywords
-syn keyword hazureKeywords let mut fun do end if then else case of return pub
-syn keyword hazureTypes    int string bool void vec_int vec_string vec_bool
+syn keyword hazureKeywords  let mut fun do end if then else case of return pub
+syn keyword hazureTypes     int string bool void vec_int vec_string vec_bool
+syn match   hazureIntrinsic "@[^()]*"
 
 " Comments
 syn region  hazureCommentLine  start="--" end="$"  contains=hazureTodos
@@ -23,7 +24,7 @@ syn region  hazureCommentBlock start="-{" end="}-" contains=hazureTodos
 syn region  hazureString       start=/\v"/  skip=/\v\\./ end=/\v"/
 
 " Numbers
-syn region  hazureNumber       start=/\s\d/ skip=/\d/    end=/\s/
+syn match   hazureNumber       "\d\+"
 
 " Set hilighting
 hi def link hazureTodos        Todo
