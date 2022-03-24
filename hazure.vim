@@ -1,5 +1,6 @@
 " Vim syntax file
-" Language: Hazure
+" Language:  Hazure
+" Filenames: *.hz *.hazure
 
 if exists("b:current_syntax")
     finish
