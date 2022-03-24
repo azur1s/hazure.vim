@@ -23,9 +23,6 @@ syn region  hazureCommentBlock start="-{" end="}-" contains=hazureTodos
 " Strings
 syn region  hazureString       start=/\v"/  skip=/\v\\./ end=/\v"/
 
-" Numbers
-syn match   hazureNumber       "\d\+"
-
 " Set hilighting
 hi def link hazureTodos        Todo
 hi def link hazureKeywords     Keyword
@@ -33,6 +30,5 @@ hi def link hazureTypes        Type
 hi def link hazureCommentLine  Comment
 hi def link hazureCommentBlock Comment
 hi def link hazureString       String
-hi def link hazureNumber       Number
 
 let b:current_syntax="hazure"
